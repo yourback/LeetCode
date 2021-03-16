@@ -8,7 +8,7 @@ import java.util.*
  * @Date 2021/3/11-13:43
  * @Email 609188080@qq.com
  */
-public class ListNode(var `val`: Int) {
+class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
 
@@ -118,7 +118,6 @@ fun reverseList4(head: ListNode?): ListNode? {
         proNode = curNode
         curNode = nextNode
     }
-
     return proNode
 }
 
