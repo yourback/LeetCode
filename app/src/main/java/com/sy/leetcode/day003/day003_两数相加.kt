@@ -99,7 +99,7 @@ fun getNode(l1: ListNode?, l2: ListNode?, carry: Int): ListNode {
 }
 
 
-// 方法三
+// 方法四
 // 使用迭代
 fun addTwoNumbers4(l1: ListNode?, l2: ListNode?): ListNode? {
     var head: ListNode? = null
