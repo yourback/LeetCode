@@ -8,6 +8,53 @@ import java.util.*
  * @Email 609188080@qq.com
  */
 // linked stack
+class ListNode(var `val`: String) {
+    var next: ListNode? = null
+}
+
+
+class LinkedStack() {
+    private var first: ListNode? = null
+    var size = 0
+
+    fun push(string: String) {
+        if (first == null) {
+            first = ListNode(string)
+        } else {
+            val temp = ListNode(string)
+            temp.next = first
+            first = temp
+        }
+        size++
+    }
+
+    fun pop(): String {
+        if (first == null) {
+            throw EmptyStackException()
+        } else {
+            size--
+            val returnNode = first
+            first = first!!.next
+            return returnNode!!.`val`
+        }
+    }
+
+    fun peek(): String {
+        return if (first == null) throw EmptyStackException() else first!!.`val`
+    }
+
+    fun poll(): String? {
+        return if (first == null) {
+            null
+        } else {
+            pop()
+        }
+    }
+
+    fun isEmpty(): Boolean {
+        return first == null
+    }
+}
 
 
 // array stack
@@ -25,7 +72,6 @@ class ArrayStack() {
 
     fun push(string: String) {
         if (size == capacity) {
-            "扩容".print()
             // 1.5 capacity
             capacityGray()
         }
@@ -39,7 +85,6 @@ class ArrayStack() {
             temp[i] = array[i]
         }
         array = temp
-        "扩容完成${array.size}".print()
     }
 
     fun pop(): String? {
@@ -54,21 +99,26 @@ class ArrayStack() {
     }
 
     fun peek(): String? {
-        if (isEmpty()) return null
+        if (isEmpty()) throw EmptyStackException()
         return array[size - 1]
+    }
+
+    fun poll(): String? {
+        if (isEmpty()) return null
+        return pop()
     }
 }
 
 fun main() {
-    val s = ArrayStack()
+    val s = LinkedStack()
     s.push("1")
-    s.push("1")
-    s.push("1")
-    s.push("1")
-    s.push("1")
-    s.push("1")
-    s.push("11")
-    s.peek().print()
+    s.push("2")
+    s.push("3")
+    s.size.print()
+    s.poll().print()
+    s.size.print()
+    s.isEmpty().print()
+
 }
 
 fun <T> T.print() {
