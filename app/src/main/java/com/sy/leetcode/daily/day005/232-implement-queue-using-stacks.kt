@@ -1,6 +1,6 @@
-package com.sy.leetcode.day005
+package com.sy.leetcode.daily.day005
 
-import com.sy.leetcode.day003.print
+import com.sy.leetcode.daily.day003.print
 import java.util.*
 
 /**
@@ -8,6 +8,9 @@ import java.util.*
  * @Date 2021/3/18-16:15
  * @Email 609188080@qq.com
  */
+
+// ☆☆☆☆☆
+
 class MyQueue() {
 
     /** Initialize your data structure here. */

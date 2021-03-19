@@ -1,12 +1,15 @@
-package com.sy.leetcode.day004
+package com.sy.leetcode.daily.day004
 
-import com.sy.leetcode.day003.ListNode
+import com.sy.leetcode.daily.day003.ListNode
 
 /**
  * @Author sy
  * @Date 2021/3/17-15:42
  * @Email 609188080@qq.com
  */
+
+// ☆☆☆☆☆
+
 // find same node`val and check the node`s val behind them whether still same
 fun getIntersectionNode(headA: ListNode?, headB: ListNode?): ListNode? {
     var curA = headA

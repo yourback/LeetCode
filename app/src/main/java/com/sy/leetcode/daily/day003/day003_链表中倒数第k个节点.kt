@@ -1,6 +1,6 @@
-package com.sy.leetcode.day003
+package com.sy.leetcode.daily.day003
 
-import com.sy.leetcode.day002.ListNode
+import com.sy.leetcode.daily.day002.ListNode
 import java.util.*
 
 /**
@@ -8,6 +8,7 @@ import java.util.*
  * @Date 2021/3/15-11:09
  * @Email 609188080@qq.com
  */
+// ☆☆☆☆☆
 
 //剑指 Offer 22. 链表中倒数第k个节点
 

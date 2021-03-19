@@ -1,6 +1,6 @@
-package com.sy.leetcode.day005
+package com.sy.leetcode.daily.day005
 
-import com.sy.leetcode.day003.print
+import com.sy.leetcode.daily.day003.print
 import java.util.*
 
 /**
@@ -9,6 +9,7 @@ import java.util.*
  * @Email 609188080@qq.com
  */
 
+// ☆☆☆☆☆
 // 844. Backspace String Compare
 // https://leetcode-cn.com/problems/backspace-string-compare/
 

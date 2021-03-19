@@ -1,10 +1,14 @@
-package com.sy.leetcode.day001
+package com.sy.leetcode.daily.day001
 
 /**
  * @Author sy
  * @Date 2021/3/9-8:49
  * @Email 609188080@qq.com
  */
+
+// ☆☆☆☆☆
+
+
 fun main() {
 //    replaceSpaces("Mr John Smith    ", 13).forEach(::print)
     val a = restoreString("codeleet", intArrayOf(4, 5, 6, 7, 0, 2, 1, 3))

@@ -1,4 +1,4 @@
-package com.sy.leetcode.day003
+package com.sy.leetcode.daily.day003
 
 import java.util.*
 

@@ -1,4 +1,4 @@
-package com.sy.leetcode.day005
+package com.sy.leetcode.daily.day005
 
 
 /**
@@ -9,6 +9,8 @@ package com.sy.leetcode.day005
 class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
+
+// ☆☆☆☆☆
 
 
 fun main() {

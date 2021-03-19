@@ -1,6 +1,5 @@
-package com.sy.leetcode.day002
+package com.sy.leetcode.daily.day002
 
-import java.lang.NullPointerException
 import java.util.*
 
 /**
@@ -8,6 +7,9 @@ import java.util.*
  * @Date 2021/3/11-13:43
  * @Email 609188080@qq.com
  */
+
+// ☆☆☆☆☆
+
 class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }

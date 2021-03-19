@@ -1,6 +1,5 @@
-package com.sy.leetcode.day004
+package com.sy.leetcode.daily.day004
 
-import com.sy.leetcode.day003.print
 import java.util.*
 
 /**
@@ -8,6 +7,8 @@ import java.util.*
  * @Date 2021/3/17-10:53
  * @Email 609188080@qq.com
  */
+
+// ☆☆☆☆☆
 
 // LeetCode 20. Valid Parentheses
 // https://leetcode-cn.com/problems/valid-parentheses/

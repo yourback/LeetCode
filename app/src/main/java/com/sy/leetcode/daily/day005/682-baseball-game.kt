@@ -1,4 +1,4 @@
-package com.sy.leetcode.day005
+package com.sy.leetcode.daily.day005
 
 import java.util.LinkedList
 
@@ -8,6 +8,8 @@ import java.util.LinkedList
  * @Date 2021/3/18-16:57
  * @Email 609188080@qq.com
  */
+
+// ☆☆☆☆☆
 // 682. Baseball Game
 // https://leetcode-cn.com/problems/baseball-game/
 
