@@ -1,5 +1,7 @@
 package com.sy.leetcode.stack
 
+import com.sy.leetcode.daily.day003.print
+import java.lang.StringBuilder
 import java.util.*
 
 /**
@@ -17,13 +19,40 @@ fun makeGood(s: String): String {
     for (c in s) {
         if (stack.isEmpty()) {
             stack.push(c)
-        }else{
+        } else {
             val preC = stack.peek()
-            if ((c.isUpperCase() && preC.isLowerCase() && preC.toUpperCase() == c)
-                ||(c.isLowerCase() && preC.isUpperCase() && preC.toLowerCase() == c)) {
+            if (c - preC == 32 || c - preC == -32) {
                 stack.pop()
+            } else {
+                stack.push(c)
             }
         }
     }
-    return "1"
+
+
+    return StringBuilder().apply {
+        while (stack.peek() != null)
+            this.insert(0, stack.pop())
+    }.toString()
+}
+
+
+fun makeGood1(s: String): String {
+    return StringBuilder().apply {
+        var i = 0
+        while (i + 1 < s.length) {
+            if (s[i] - s[i + 1] != 32 && s[i] - s[i + 1] != -32) {
+                append(s[i])
+                i++
+            }else{
+                i+=2
+            }
+        }
+        append(s[i])
+    }.toString()
+}
+
+
+fun main() {
+    makeGood1("leEeetcode").print()
 }
