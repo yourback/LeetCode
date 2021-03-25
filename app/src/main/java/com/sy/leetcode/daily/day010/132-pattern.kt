@@ -27,6 +27,7 @@ fun find132pattern(nums: IntArray): Boolean {
 }
 
 
+// 单调栈
 fun find132pattern2(nums: IntArray): Boolean {
     val stack = LinkedList<Int>()
     val array = IntArray(nums.size).apply {
@@ -50,7 +51,6 @@ fun find132pattern2(nums: IntArray): Boolean {
     }
     return false
 }
-
 
 // 使用数组可以 得到在位置i 之前 最大或者最小的数字
 // 单调栈 可以针对 最大，次大...   最小，次小... 中使用
