@@ -49,27 +49,7 @@ fun deleteDuplicates(head: ListNode?): ListNode? {
 }
 
 
-fun deleteDuplicates1(head: ListNode?): ListNode? {
-    if (head?.next == null) return head
-    val startNode = ListNode(0)
-    findDiffNodeBetweenFrontAndBack(startNode, head)
-    return startNode.next
-}
+fun main() {
 
-fun findDiffNodeBetweenFrontAndBack(startNode: ListNode, head: ListNode) {
-    var frontNode: ListNode? = null
-    var curNode = head
-    var backNode = head.next
-
-    while (backNode != null) {
-        if (frontNode?.`val` != curNode.`val` && curNode.`val` != backNode.`val`) {
-            startNode.next = curNode
-            findDiffNodeBetweenFrontAndBack(curNode, backNode)
-            return
-        }
-        frontNode = curNode
-        curNode = backNode
-        backNode = backNode.next
-    }
 }
 
